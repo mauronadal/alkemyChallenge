@@ -4,9 +4,6 @@ import axios from "axios";
 
 function Listado(props) {
   const navigate = useNavigate();
-
- 
-
   useEffect(() => {
     const token = localStorage.getItem("token");
 

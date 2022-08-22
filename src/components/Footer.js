@@ -5,7 +5,7 @@ const Footer = () => {
         <nav>
            
             <div className="links">
-                <li> <Link to="/http://www.google.com">Google</Link></li>
+              
                 
                 
                 
