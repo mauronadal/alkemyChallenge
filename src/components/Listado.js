@@ -36,7 +36,7 @@ function Listado(props) {
             <div className="col-3" key={index}>
               <div className="card my-4">
                 <img src={`https://image.tmdb.org/t/p/w500/${oneMovie.poster_path}`} className="card-img-top" alt="..." />
-                <button className="favourite-btn" onClick={props.addOrRemoveFromFavs}>🖤</button>
+                <button className="favourite-btn" onClick={props.addOrRemoveFromFav} data-movie-id={oneMovie.id} >🖤</button>
                 <div className="card-body">
                   <h5 className="card-title">{oneMovie.title}</h5>
                   <p className="card-text">

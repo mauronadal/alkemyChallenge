@@ -11,7 +11,18 @@ import './app.css';
 
 function App() {
   
+const addOrRemoveFromFav = e => {
+  const btn = e.currentTarget;
+  const parent = btn.parentElement;
+  const imgURL = parent.querySelector('img').getAttribute('src');
+  const title = parent.querySelector('h5').innerText;
+  const overview = parent.querySelector('h5').innerText;
+  const moviData = {
+    imgURL, title, overview, id: btn.dataset.movieId
+  }
+ 
 
+}
   
   return (
     
@@ -21,7 +32,7 @@ function App() {
         
         <Routes>
           <Route path="/" element={<Login />} />
-          <Route path="listado" element={<Listado />} />
+          <Route path="listado" element={<Listado addOrRemoveFromFav={addOrRemoveFromFav} />} />
           <Route path="detalle" element={<Detalle />} />
           <Route path="contacto" element={<Listado />} />
           <Route path="resultados" element={<Resultados />} />
