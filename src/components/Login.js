@@ -36,7 +36,7 @@ function Login() {
       .then((res) => {
         console.log(res.data);
         const tokenRecibido = res.data.token;
-        localStorage.setItem("token", tokenRecibido);
+        sessionStorage.setItem("token", tokenRecibido);
 
         navegate("/listado");
       });
