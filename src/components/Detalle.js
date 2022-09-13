@@ -1,7 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 
-
 function Detalle() {
   let query = new URLSearchParams(window.location.search);
   let movieID = query.get("movieID");

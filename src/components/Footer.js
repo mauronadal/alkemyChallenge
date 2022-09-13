@@ -1,18 +1,11 @@
 import { Link } from "react-router-dom";
 
 const Footer = () => {
-    return (
-        <nav>
-           
-            <div className="links">
-              
-                
-                
-                
-            </div>
+  return (
+    <nav>
+      <div className="links"></div>
+    </nav>
+  );
+};
 
-        </nav>
-    );
-}
- 
-export default Footer
+export default Footer;

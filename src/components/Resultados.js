@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import swAlert from '@sweetalert/with-react';
+import swAlert from "@sweetalert/with-react";
 
 function Resultados() {
   let query = new URLSearchParams(window.location.search);
@@ -27,8 +27,10 @@ function Resultados() {
 
   return (
     <>
-    <h2>Buscaste: <em>{keyword}</em></h2>
-    {moviesResult.length === 0 && <h3>No hay resultados</h3>}
+      <h2>
+        Buscaste: <em>{keyword}</em>
+      </h2>
+      {moviesResult.length === 0 && <h3>No hay resultados</h3>}
       <div className="row">
         {moviesResult.map((oneMovie, index) => {
           return (
